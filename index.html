@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hire Me - Sunny</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #181824;
+            --card-bg: #23233a;
+            --accent: #00c6cf;
+            --text: #f3f3f3;
+            --shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+        }
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+        .container {
+            background: var(--card-bg);
+            box-shadow: var(--shadow);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            max-width: 400px;
+            width: 90vw;
+            text-align: center;
+            position: relative;
+            animation: fadeInUp 1s cubic-bezier(.68,-0.55,.27,1.55);
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px);}
+            100% { opacity: 1; transform: translateY(0);}
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid var(--accent);
+            box-shadow: 0 4px 16px rgba(0,198,207,0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 var(--accent);}
+            70% { box-shadow: 0 0 0 10px rgba(0,198,207,0);}
+            100% { box-shadow: 0 0 0 0 var(--accent);}
+        }
+        h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+            letter-spacing: 1px;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #bdbdbd;
+        }
+        .hire-btn {
+            background: linear-gradient(90deg, var(--accent), #3a8fff);
+            color: var(--text);
+            border: none;
+            border-radius: 30px;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,198,207,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            outline: none;
+            animation: bounceIn 1.2s 0.5s backwards;
+        }
+        .hire-btn:hover {
+            transform: scale(1.07);
+            box-shadow: 0 4px 16px rgba(0,198,207,0.25);
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.7); opacity: 0;}
+            60% { transform: scale(1.1);}
+            80% { transform: scale(0.95);}
+            100% { transform: scale(1); opacity: 1;}
+        }
+        .socials {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+        }
+        .socials a {
+            color: var(--accent);
+            font-size: 1.5rem;
+            transition: color 0.2s;
+            text-decoration: none;
+        }
+        .socials a:hover {
+            color: #3a8fff;
+        }
+        @media (max-width: 500px) {
+            .container {
+                padding: 1.2rem 0.5rem;
+                max-width: 98vw;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            .avatar {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/7c8e4e2e5a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pravatar.cc/150?img=3" alt="Sunny Avatar" class="avatar">
+        <h1>Sunny - Web Developer</h1>
+        <p>
+            Passionate about building modern, responsive websites.<br>
+            Let's work together to bring your ideas to life!
+        </p>
+        <a href="mailto:sunny@example.com" class="hire-btn">Hire Me</a>
+        <div class="socials">
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <div class="socials">
+            <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+</html>
